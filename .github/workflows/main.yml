@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v2.10.0
         with:
           context: ./src
-          file: ./src/Dockerfile
+          file: ./IniciativaK8s/Dockerfile
           push: true
           tags: |
             pedronl/convert-temp:${{ github.run_number }}
