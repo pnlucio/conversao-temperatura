@@ -22,8 +22,8 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v2.10.0
         with:
-          context: ./src
-          file: ./IniciativaK8s/Dockerfile
+          context: ./
+          file: ./IniciativaK8s/conversao-temperatura/src/Dockerfile
           push: true
           tags: |
             pedronl/convert-temp:${{ github.run_number }}
